@@ -83,7 +83,7 @@ pipeline{
     
      stage('deploy-prod')
      {
-       when{ branch 'main' 
+       when{ branch 'master' 
         beforeAgent true}
         agent{label 'prod-server'}
 
